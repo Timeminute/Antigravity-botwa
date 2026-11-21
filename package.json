@@ -1,0 +1,20 @@
+{
+  "name": "bot-wa-termux",
+  "version": "2.1.0",
+  "description": "WhatsApp Bot All-in-One Downloader, Stiker Maker, & Antigravity (agy) AI Assistant untuk Termux Android (Baileys)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:loop": "bash start.sh",
+    "setup:termux": "bash install.sh",
+    "clean:session": "rm -rf auth_info temp_downloads"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "7.0.0-rc14",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
